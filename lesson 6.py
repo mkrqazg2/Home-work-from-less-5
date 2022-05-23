@@ -11,35 +11,24 @@
 
 # 2. Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 
-# ЭТУ ЗАДАЧУ НЕ СМОГ ПОБЕДИТЬ ((((
-
 # import math
 # print('Введите число: ')
 # num = int(input())
 # print(f'простые множители для заданного числа: ')
+# mult_list = []
 
-# list_mult = []
- 
-# def is_prime(i):
-#     m = min(i, int(math.sqrt(num)))
-#     r = map(lambda x: num % x == 0, range(2, int(num)))
-#     return r
- 
-# list_mult = list(filter(is_prime, range(2,int(num))))
-# print(list_mult)
-        # if num % 2 == 0  or num % 3 == 0:
-        #     i = 2
-        #     #list_mult = list(map(filter(lambda i: num % i ==0  or num % (i+1) == 0, range(2, int(num)))))
-        #     list_mult = filter(lambda i: num % i == 0  or num % (i+1) == 0,range(2,int(num)))
-        #     #num = num -1
-        #     print(list(list_mult))
-        # # else:
-        # #     list_mult = list(filter(lambda j: num % j == 1,range(2, int(num))))
-        # # for i in range(2, int(num)):
-        # else:
-        #     print(f"{'число ' + str(num) + ' простое'}")#list_mult = list(filter(lambda j: num % j == 1,range(2, int(num))))
+# def count(i):
+#     global num
+#     global mult_list
+#     a = []
+#     while (num % i == 0):
+#         num //= i
+#         mult_list.append(i)
 
-
+# list(map(count, [i for i in range(2, int(num**0.5)+1)]))
+# if (num != 1):
+#     mult_list.append(num)
+# print(mult_list)
 
 #*******************************************************************************
 # 3. Реализовать программу, получающую на вход строку, состоящую из слов, 
